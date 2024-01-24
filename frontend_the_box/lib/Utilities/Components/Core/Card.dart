@@ -16,8 +16,8 @@ class CardExamplesApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Center(
+    return Container(
+      child: Center(
         child: Card(
           color: backgroundColor,
           shape: RoundedRectangleBorder(

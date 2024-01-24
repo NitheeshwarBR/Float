@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import '../../Utilities/Components/Core/Card.dart';
+import 'Utilities/Components/Core/SegmentButtons.dart';
+
 void main() {
   runApp(const MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
@@ -11,7 +13,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Custom Card Example'),
+          title: Text('Custom segment button Example'),
+        ),
+        body: Center(
+          child: SegmentButtonComponent(),
         ),
       ),
     );
